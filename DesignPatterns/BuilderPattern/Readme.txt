@@ -1,0 +1,1 @@
+﻿Builder design pattern : Separate the construction of complex object from its representation so that same construction process can create different representations.

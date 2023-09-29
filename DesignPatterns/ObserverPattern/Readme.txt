@@ -1,0 +1,1 @@
+﻿Observer design pattern : Define a one-to-many dependency between objects so that when one object changes states, all its dependents are notifid and updated.

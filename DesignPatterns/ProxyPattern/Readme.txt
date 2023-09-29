@@ -1,0 +1,1 @@
+﻿Proxy design pattern : provide a placeholder for another object to control access to it.

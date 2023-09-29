@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E5C3138-08F2-42A4-8EE3-266535594E10}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractMethodPattern\BadPractice.cs" />
+    <Compile Include="AbstractMethodPattern\ClassicPrepare.cs" />
+    <Compile Include="AbstractMethodPattern\Client.cs" />
+    <Compile Include="AbstractMethodPattern\EgyptionOrder.cs" />
+    <Compile Include="AbstractMethodPattern\EgyptionResturant.cs" />
+    <Compile Include="AbstractMethodPattern\IOrder.cs" />
+    <Compile Include="AbstractMethodPattern\IPrepare.cs" />
+    <Compile Include="AbstractMethodPattern\IResturant.cs" />
+    <Compile Include="AbstractMethodPattern\ItalianOrder.cs" />
+    <Compile Include="AbstractMethodPattern\ItalianResturant.cs" />
+    <Compile Include="AdapterPattern\BadPractice.cs" />
+    <Compile Include="AdapterPattern\ModernUIResturant.cs" />
+    <Compile Include="AdapterPattern\OldUIResturnat.cs" />
+    <Compile Include="AdapterPattern\Client.cs" />
+    <Compile Include="AdapterPattern\JSONData.cs" />
+    <Compile Include="AdapterPattern\OldUI.cs" />
+    <Compile Include="AdapterPattern\ModernUI.cs" />
+    <Compile Include="AdapterPattern\XMLAdapter.cs" />
+    <Compile Include="AdapterPattern\XMLData.cs" />
+    <Compile Include="BuilderPattern\Client.cs" />
+    <Compile Include="BuilderPattern\Cook.cs" />
+    <Compile Include="BuilderPattern\Chef.cs" />
+    <Compile Include="BuilderPattern\Sandwich.cs" />
+    <Compile Include="CompositePattern\Client.cs" />
+    <Compile Include="CompositePattern\Item.cs" />
+    <Compile Include="CompositePattern\Offer.cs" />
+    <Compile Include="CompositePattern\Sandwich.cs" />
+    <Compile Include="FactoryMethodPattern\BadPractice.cs" />
+    <Compile Include="FactoryMethodPattern\Client.cs" />
+    <Compile Include="FactoryMethodPattern\EgyptionOrder.cs" />
+    <Compile Include="FactoryMethodPattern\EgyptionResturant.cs" />
+    <Compile Include="FactoryMethodPattern\IOrder.cs" />
+    <Compile Include="FactoryMethodPattern\IResturant.cs" />
+    <Compile Include="FactoryMethodPattern\ItalianOrder.cs" />
+    <Compile Include="FactoryMethodPattern\ItalianResturant.cs" />
+    <Compile Include="IteratorPattern\Client.cs" />
+    <Compile Include="IteratorPattern\Collection.cs" />
+    <Compile Include="IteratorPattern\Item.cs" />
+    <Compile Include="IteratorPattern\Iterator.cs" />
+    <Compile Include="IteratorPattern\Recipt.cs" />
+    <Compile Include="IteratorPattern\ReciptItrator.cs" />
+    <Compile Include="ObserverPattern\Advertising.cs" />
+    <Compile Include="ObserverPattern\Client.cs" />
+    <Compile Include="ObserverPattern\Customer.cs" />
+    <Compile Include="ObserverPattern\SocialMedia.cs" />
+    <Compile Include="ObserverPattern\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyPattern\BadPractice.cs" />
+    <Compile Include="ProxyPattern\Client.cs" />
+    <Compile Include="ProxyPattern\Menu.cs" />
+    <Compile Include="ProxyPattern\ProxyMenu.cs" />
+    <Compile Include="ProxyPattern\RealMenu.cs" />
+    <Compile Include="SingletonPattern\BadPractice.cs" />
+    <Compile Include="SingletonPattern\Software.cs" />
+    <Compile Include="SingletonPattern\Client.cs" />
+    <Compile Include="SingletonPattern\Cashir.cs" />
+    <Compile Include="StrategyPattern\BadPractice.cs" />
+    <Compile Include="StrategyPattern\Client.cs" />
+    <Compile Include="StrategyPattern\CreditCard.cs" />
+    <Compile Include="StrategyPattern\PaymentMethod.cs" />
+    <Compile Include="StrategyPattern\PaymentService.cs" />
+    <Compile Include="StrategyPattern\PayPal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AbstractMethodPattern\Readme.txt" />
+    <Content Include="AdapterPattern\Readme.txt" />
+    <Content Include="BuilderPattern\Readme.txt" />
+    <Content Include="CompositePattern\Readme.txt" />
+    <Content Include="FactoryMethodPattern\Readme.txt" />
+    <Content Include="IteratorPattern\Readme.txt" />
+    <Content Include="ObserverPattern\Readme.txt" />
+    <Content Include="ProxyPattern\Readme.txt" />
+    <Content Include="SingletonPattern\Readme.txt" />
+    <Content Include="StrategyPattern\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
